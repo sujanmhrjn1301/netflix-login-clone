@@ -1,0 +1,295 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Martel Sans;
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+  /* background-color: black;
+  color: whitesmoke; */
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.253);
+  /* background-color: transparent; */
+
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.logo {
+  height: 50px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  align-items: center; /* Center nav items vertically */
+  margin-right: 2rem; /* Add margin to the right */
+}
+
+.nav-item {
+  color: #fff;
+  padding: 0 1rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #f41d25;
+}
+
+.banner {
+  height: 500px;
+  background-image: url("https://wallpapers.com/images/featured-full/stranger-things-dkttxahzpl44tbsa.jpg");
+  background-size: cover;
+
+  background-position: center;
+  position: relative;
+}
+
+.banner:hover .banner-content {
+  opacity: 1;
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.banner-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner-content button {
+  padding: 0.5rem 1rem;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.banner-content button:hover {
+  background-color: #7f1115;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  
+}
+
+/* .category {
+  text-align: center;
+  flex-basis: calc(50%/4);
+  padding: 0 1rem;
+  transition: transform 0.3s ease;
+} */
+.category {
+
+  text-align: center;
+  width: 245px; /* Adjust according to your preference */
+  padding: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+}
+
+.category img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.category img:hover {
+  transform: scale(1.05);
+}
+
+.category h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Adjustments for smaller screens */
+
+  .container {
+    width: 90%; /* Take up 90% of the viewport width */
+    max-width: none; /* Remove maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Add padding */
+  }
+
+  .header {
+    padding: 10px; /* Add padding to the header */
+  }
+
+  .logo {
+    height: 40px; /* Reduce logo height */
+  }
+
+  .nav {
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  .nav-item {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .banner {
+    height: 250px; /* Adjust banner height */
+  }
+
+  .banner-content {
+    padding: 10px; /* Add padding to banner content */
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .banner-content p {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .banner-content button {
+    padding: 5px 10px; /* Adjust button padding */
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .categories {
+    flex-direction: column; /* Stack categories vertically */
+    align-items: center; /* Center categories horizontally */
+  }
+
+  .category {
+    width: 100%; /* Take up full width */
+    margin-bottom: 10px; /* Add margin between categories */
+  }
+
+  .category img {
+    height: 150px; /* Reduce image height */
+  }
+
+  .category h2 {
+    font-size: 1rem; /* Reduce font size */
+  }
+}
+
+@media only screen and (max-width: 161.70mm) {
+  /* Adjustments for smaller screens */
+
+  .container {
+    width: 90%; /* Take up 90% of the viewport width */
+    max-width: none; /* Remove maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0.88mm; /* Add padding */
+  }
+
+  .header {
+    padding: 0.88mm; /* Add padding to the header */
+  }
+
+  .logo {
+    height: 6.94mm; /* Reduce logo height */
+  }
+
+  .nav {
+    margin-right: 0.88mm; /* Adjust margin */
+  }
+
+  .nav-item {
+    font-size: 6px; /* Reduce font size */
+  }
+
+  .banner {
+    height: 45.86mm; /* Adjust banner height */
+  }
+
+  .banner-content {
+    padding: 0.88mm; /* Add padding to banner content */
+  }
+
+  .banner-content h1 {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .banner-content p {
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .banner-content button {
+    padding: 2.19px 4.38px; /* Adjust button padding */
+    font-size: 12px; /* Reduce font size */
+  }
+
+  .categories {
+    flex-direction: column; /* Stack categories vertically */
+    align-items: center; /* Center categories horizontally */
+  }
+
+  .category {
+    width: 100%; /* Take up full width */
+    margin-bottom: 0.88mm; /* Add margin between categories */
+  }
+
+  .category img {
+    height: 34.29mm; /* Reduce image height */
+  }
+
+  .category h2 {
+    font-size: 14px; /* Reduce font size */
+  }
+}
