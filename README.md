@@ -11,9 +11,10 @@ HTML5
 
 CSS3
 
-
 NodeJS
 
 MySQL Database (XAMP)
 
 ## Demo
+
+![demo](https://github.com/sujanmhrjn1301/netflix-login-clone/assets/107530986/a48c0b56-f3d6-4e99-ad88-456bd58d9442)
