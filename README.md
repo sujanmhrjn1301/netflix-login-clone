@@ -8,8 +8,12 @@ Simple and intuitive user interface.
 
 ## Languages Used
 HTML5
+
 CSS3
+
+
 NodeJS
+
 MySQL Database (XAMP)
 
 ## Demo
