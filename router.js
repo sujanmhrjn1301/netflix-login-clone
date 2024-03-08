@@ -1,28 +1,3 @@
-// const mysql = require('mysql');
-// var express = require("express");
-
-// var router = express.Router();
-
-
-
-// const credential = {
-//   username: "admin",
-//   password: "admin"
-// }
-// //login user
-// router.post('/login', (req, res) => {
-//   if (req.body.username == credential.username && req.body.password == credential.password) {
-//     req.session.user = req.body.username;
-//     // res.redirect('dashboard');
-//     res.end("Login Successful...!");
-//   } else {
-//     res.send("Invalid Username or Password")
-//   }
-// });
-
-// module.exports = router;
-
-
 const express = require('express');
 const router = express.Router();
 
